@@ -18,4 +18,6 @@ Forslag til rekkefølge:
 * QuickCheckExamples
 * Vigenere
 
+En enkel måte å kjøre testene på er `$ runhaskell Tests/<testnavn>.hs`, f.eks `runhaskell Tests/GettingStartedTests.hs`.
+
 Se `CheatSheet.hs` for eksempler på Haskell-syntaks og bruk av vanlige funksjoner.
