@@ -30,7 +30,7 @@ main = putStrLn "Hello World"
    Now the very first "exercise" is to change the `myName` function to
    return your name:
 -}
-myName = "N/A"
+myName = "Finn Finnsen"
 
 {-
   ... then change the target to `Tests` and hit Run again.

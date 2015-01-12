@@ -31,7 +31,10 @@ reverseProperty' xs = xs == (reverse . reverse) xs
     [(1,'H'),(4,'e'),(2,'l'),(1,'o'),(1,' '),(1,'H'),(1,'a'),(1,'s'),(1,'k'),(1,'e'),(2,'l'),(3,'!')]
 -}
 encode :: String -> [(Int, Char)]
-encode xs = _YOUR_CODE_HERE
+encode [] = []
+encode (x:xs) = (n, x) : encode rest
+                where n = 1 + (length $ takeWhile (== x) xs)
+                      rest = dropWhile (== x) xs
 
 {-
     Excercise 2:
@@ -44,4 +47,6 @@ encode xs = _YOUR_CODE_HERE
 -}
 
 decode :: [(Int, Char)] -> String
-decode xs = _YOUR_CODE_HERE
+decode [] = []
+decode ((n, x):rest) = replicate n x ++ decode rest
+

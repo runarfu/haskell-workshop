@@ -1,6 +1,7 @@
 module CreditCardNumberValidator where
 
 import Common
+import Data.Char
 {-
     This exercise is based on the homework assignments in Erik Meijer's ongoing MOOC «FP101x - Introduction to Functional Programming».
 
@@ -31,35 +32,42 @@ type DigitList = [Int]
    Convert a numerical representation of the credit card number to a String
 -}
 numberToString :: Int -> String
-numberToString = _YOUR_CODE_HERE
+numberToString = show
+-- Alternatively:
+--numberToString xs = show xs
 
 {-
    Step 2:
    Split string on single digits, and represent them as Ints
 -}
 stringToDigitList :: String -> DigitList
-stringToDigitList = _YOUR_CODE_HERE
+stringToDigitList = map digitToInt
+--stringToDigitList xs = map digitToInt xs
 
 {-
    Step 3:
    Double every other element, starting from the right-most digit
 -}
 doubleEveryOtherElement :: DigitList -> DigitList
-doubleEveryOtherElement = _YOUR_CODE_HERE
+doubleEveryOtherElement xs = reverse $ zipWith (*) (reverse xs) $ cycle [1,2]
+-- Alternatively:
+--doubleEveryOtherElement xs = reverse $ map (\(i, x) -> if i `mod` 2 == 0 then x else 2 * x) (zip [0..] (reverse xs))
 
 {-
    Step 4:
    Sum the digits in a list. Remember to split numbers with more than 1 digit.
 -}
 sumDigitList :: DigitList -> Int
-sumDigitList = _YOUR_CODE_HERE
+sumDigitList = sum . map digitToInt . concat . map show
+-- Alternatively:
+--sumDigitList xs = sum $ map digitToInt $ concat $ map show xs
 
 {-
    Step 5:
    Calculate the modulus of a number over 10
 -}
 mod10 :: Int -> Int
-mod10 = _YOUR_CODE_HERE
+mod10 x = x `mod` 10
 
 {-
    Step 6:
@@ -67,4 +75,7 @@ mod10 = _YOUR_CODE_HERE
    if a credit card number is valid
 -}
 isValidCreditCardNumber :: Int -> Bool
-isValidCreditCardNumber = _YOUR_CODE_HERE
+isValidCreditCardNumber = (== 0) . mod10 . sumDigitList . doubleEveryOtherElement . stringToDigitList . numberToString
+-- Alternatively:
+--isValidCreditCardNumber x = 0 == (mod10 $ sumDigitList $ doubleEveryOtherElement $ stringToDigitList $ numberToString x)
+

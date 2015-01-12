@@ -40,19 +40,20 @@ alphabet :: [Char]
 alphabet = ['A'..'Z']
 
 char2int :: Char -> Int
-char2int c = _YOUR_CODE_HERE
+char2int c = ord c
 
 int2char :: Int -> Char
-int2char i = _YOUR_CODE_HERE
+int2char i = chr i
 
 encryptChar :: (Char, Char) -> Char
-encryptChar (plainChar, keyChar) = _YOUR_CODE_HERE
+encryptChar (plainChar, keyChar) = int2char $ ord 'A' + (char2int plainChar + char2int keyChar) `mod` 26
 
 decryptChar :: (Char, Char) -> Char
-decryptChar (encryptedChar, keyChar) = _YOUR_CODE_HERE
+decryptChar (encryptedChar, keyChar) = int2char $ ord 'A' + (char2int encryptedChar - char2int keyChar) `mod` 26
 
 encrypt :: String -> String -> String
-encrypt plainText secretKey = _YOUR_CODE_HERE
+encrypt plainText secretKey = map encryptChar $ zip plainText (cycle secretKey)
 
 decrypt :: String -> String -> String
-decrypt encryptedText secretKey = _YOUR_CODE_HERE
+decrypt encryptedText secretKey = map decryptChar $ zip encryptedText (cycle secretKey)
+
