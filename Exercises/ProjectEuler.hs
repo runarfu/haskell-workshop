@@ -26,6 +26,14 @@ problem1 = _YOUR_CODE_HERE
 
     Find the largest palindrome made from the product of two 3-digit numbers.
 
+    Hint: This is much easier if you know about list comprehensions. A list
+          comprehensions generates a list from one or more "generators" and
+          possibly one or more guards:
+
+          [x | x <- [1,2,3]]                                 = [1,2,3]
+          [x+y | x <- [1,2], y <- [8,9]]                     = [1+8, 1+9, 2+8, 2+9]
+          [x+y | x <- [1,2], y <- [8,9], (x+y) `mod` 2 == 0] = [1+9, 2+8]
+
 -}
 problem4 = _YOUR_CODE_HERE
 
