@@ -8,8 +8,9 @@ import Common
 
 {-
     Problem 1
-    If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
-    Find the sum of all the multiples of 3 or 5 below 1000.
+    If we list all the natural numbers below 10 that are multiples of 3 or 5,
+    we get 3, 5, 6 and 9. The sum of these multiples is 23.  Find the sum of
+    all the multiples of 3 or 5 below 1000.
 
     Hints:
     A simple solution to this involves sum, filter and mod.
@@ -20,7 +21,8 @@ problem1 = _YOUR_CODE_HERE
 {-
     Problem 4
 
-    A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.
+    A palindromic number reads the same both ways. The largest palindrome made
+    from the product of two 2-digit numbers is 9009 = 91 × 99.
 
     Find the largest palindrome made from the product of two 3-digit numbers.
 
@@ -36,9 +38,11 @@ problem4 = _YOUR_CODE_HERE
     The square of the sum of the first ten natural numbers is,
     (1 + 2 + ... + 10)^2 = 552 = 3025
 
-    Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 − 385 = 2640.
+    Hence the difference between the sum of the squares of the first ten
+    natural numbers and the square of the sum is 3025 − 385 = 2640.
 
-    Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
+    Find the difference between the sum of the squares of the first one hundred
+    natural numbers and the square of the sum.
 -}
 problem6 = _YOUR_CODE_HERE
 
