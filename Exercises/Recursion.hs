@@ -38,6 +38,7 @@ returnLastElementPartial xs = returnLastElementPartial (tail xs)
     just a fancy way of saying “`Nothing` or `Just …`”.
 -}
 
+returnLastElement :: [a] -> Maybe a
 returnLastElement []  = _YOUR_CODE_HERE
 returnLastElement [x] = _YOUR_CODE_HERE
 returnLastElement xs  = _YOUR_CODE_HERE
@@ -49,6 +50,7 @@ returnLastElement xs  = _YOUR_CODE_HERE
     in the input list.  Return `Nothing` if the list is too short. Feel free to
     add more function clauses as you see fit.
 -}
+secondToLast :: [a] -> Maybe a
 secondToLast _ = _YOUR_CODE_HERE
 
 {-
