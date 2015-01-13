@@ -8,8 +8,8 @@ Forslag til rekkefølge:
 
 * GettingStarted
 * Functions
-* CreditCardNumberValidator
 * PartialApplication
+* CreditCardNumberValidator
 * PatternMatching
 * HigherOrderFunctions
 * ProjectEuler
