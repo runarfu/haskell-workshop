@@ -18,7 +18,7 @@ add x y = x + y
     e.g. turn [1,2,3] into [3,4,5]:
 -}
 
-addTwo xs = map (_YOUR_CODE_HERE) xs
+addTwo xs = map (add 2) xs
 
 {-
     The function `elem` takes a value and a list of values of that type, and
@@ -32,7 +32,7 @@ addTwo xs = map (_YOUR_CODE_HERE) xs
 -}
 
 hasZero :: [Int] -> Bool
-hasZero = _YOUR_CODE_HERE
+hasZero = elem 0
 
 {-
     Now, let's turn the parameters around. Can you create a function that
@@ -42,4 +42,4 @@ hasZero = _YOUR_CODE_HERE
 -}
 
 isDigit :: Char -> Bool
-isDigit = _YOUR_CODE_HERE
+isDigit = \c -> elem c ['0'..'9']
