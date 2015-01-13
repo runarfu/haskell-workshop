@@ -74,6 +74,10 @@ isDollar character = _YOUR_CODE_HERE
 {-
     Exercise:
     Define an "exclusive or" function: http://en.wikipedia.org/wiki/Exclusive_or#Truth_table
+    You probably want to use the following functions:
+
+    (&&) :: Bool -> Bool -> Bool
+    (||) :: Bool -> Bool -> Bool
 -}
 xor :: Bool -> Bool -> Bool
 xor arg1 arg2 = _YOUR_CODE_HERE
