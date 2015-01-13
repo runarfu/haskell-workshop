@@ -9,12 +9,12 @@ Forslag til rekkefølge:
 * GettingStarted
 * Functions
 * PartialApplication
+* Recursion
+* RecursionSchemes
 * CreditCardNumberValidator
 * PatternMatching
 * HigherOrderFunctions
 * ProjectEuler
-* Recursion
-* RecursionSchemes
 * QuickCheckExamples
 * Vigenere
 
