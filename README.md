@@ -7,14 +7,14 @@ Oppgavene er ment å bli løst med testdrevet utvikling (TDD), hvor det er teste
 Forslag til rekkefølge:
 
 * GettingStarted
-* CreditCardNumberValidator
 * Functions
 * PartialApplication
+* Recursion
+* RecursionSchemes
+* CreditCardNumberValidator
 * PatternMatching
 * HigherOrderFunctions
 * ProjectEuler
-* Recursion
-* RecursionSchemes
 * QuickCheckExamples
 * Vigenere
 
