@@ -9,11 +9,12 @@ import Common
 
 -- Defining a function taking one parameter:
 welcome name = "Welcome, " ++ name ++ "."
-{-     ^        ^            ^
-      name    parameter     body
+--  ^     ^    `------------^------------'
+-- name  parameter         body
 
+{-
     There's no keyword like "def", "function" or anything preceding the name, just:
-    <functionName> <optional arguments> = <body>
+    <functionName> <arguments> = <body>
 -}
 
 -- Calling a function with arguments
@@ -22,7 +23,7 @@ welcomeSirOrMadam = welcome "Sir or Madam"
 {-
     Now if we do multiple function applications and intend on passing the result
     of the first application to the second application and so on, we would have to
-    use parenthesis to remove abiguities:
+    use parentheses to remove ambiguities:
 -}
 printWelcomeMessage2 = putStrLn (welcome "Welcome to the present")
 {-
