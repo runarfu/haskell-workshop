@@ -1,4 +1,4 @@
-module AllTests where
+module Main where
 
 {-
     You're not supposed to touch this ;)
