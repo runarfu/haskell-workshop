@@ -10,6 +10,7 @@ import Test.Hspec
 import qualified Tests.GettingStartedTests            as GS
 import qualified Tests.CreditCardNumberValidatorTests as CV
 import qualified Tests.FunctionsTests                 as FU
+import qualified Tests.PartialApplicationTests        as PA
 import qualified Tests.PatternMatchingTests           as PM
 import qualified Tests.HigherOrderFunctionsTests      as HF
 import qualified Tests.ProjectEulerTests              as PE
@@ -24,6 +25,7 @@ main = hspec $ do
     GS.tests
     CV.tests
     FU.tests
+    PA.tests
     PM.tests
     HF.tests
     PE.tests
