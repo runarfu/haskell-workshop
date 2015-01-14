@@ -1,4 +1,4 @@
-module PatternMatching where
+module E07_PatternMatching where
 
 import Common
 
@@ -31,7 +31,8 @@ desugaredList = 1:(2:(3:[]))
 {-
     Exercise:
     Define the secondElement function so it returns the second element
-    in the list. Use pattern matching.
+    in the list. Use pattern matching. We'll assume that lists have a least two
+    elements for now...
 
     tip: the underscore represents a wildcard, matching any pattern. Replace
          it with a pattern match and get cracking!
@@ -42,7 +43,8 @@ secondElement _ = _YOUR_CODE_HERE
 {-
     Exercise:
     Define the drop3 function so it "skips" the 3 first elements in the list,
-    but returns the rest. Use pattern matching.
+    but returns the rest. Use pattern matching. Again, we'll assume that all
+    lists are long enough for now...
 -}
 drop3 _ = _YOUR_CODE_HERE
 
@@ -51,10 +53,6 @@ drop3 _ = _YOUR_CODE_HERE
     Exercise:
     Define the thirdAndLast function so it accepts lists of length 3, and returns the third (and last)
     element in that list.
-
-    note: because the function you define only accepts lists of length 3 it's a partial function.
-          That means it doesn't know what to do if it receives a list of length /= 3, and
-          the runtime will throw a PatternMatchFail exception.
 -}
 thirdAndLast _ = _YOUR_CODE_HERE
 

@@ -1,7 +1,7 @@
 module Tests.VigenereTests where
 
-import qualified Test.QuickCheck           as QC
-import qualified Vigenere                  as VI
+import qualified Test.QuickCheck as QC
+import qualified E11_Vigenere     as VI
 import Test.Hspec
 
 tests = do

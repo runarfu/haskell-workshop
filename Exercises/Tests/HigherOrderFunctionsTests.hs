@@ -1,7 +1,7 @@
 module Tests.HigherOrderFunctionsTests where
 
-import qualified Test.QuickCheck           as QC
-import qualified HigherOrderFunctions      as HOF
+import qualified Test.QuickCheck         as QC
+import qualified E08_HigherOrderFunctions as HOF
 import Test.Hspec
 
 tests = do

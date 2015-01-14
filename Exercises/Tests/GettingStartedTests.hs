@@ -1,7 +1,7 @@
 module Tests.GettingStartedTests where
 
-import qualified Test.QuickCheck           as QC
-import qualified GettingStarted            as GS
+import qualified Test.QuickCheck   as QC
+import qualified E01_GettingStarted as GS
 import Test.Hspec
 
 tests = do

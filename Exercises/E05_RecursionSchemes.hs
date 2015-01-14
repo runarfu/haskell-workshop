@@ -1,4 +1,4 @@
-module RecursionSchemes where
+module E05_RecursionSchemes where
 
 import Common
 

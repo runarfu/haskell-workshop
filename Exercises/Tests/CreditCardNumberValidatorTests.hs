@@ -1,7 +1,7 @@
 module Tests.CreditCardNumberValidatorTests where
 
-import qualified Test.QuickCheck           as QC
-import qualified CreditCardNumberValidator as CV
+import qualified Test.QuickCheck              as QC
+import qualified E06_CreditCardNumberValidator as CV
 import Test.Hspec
 
 tests = do

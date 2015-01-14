@@ -1,4 +1,4 @@
-module Vigenere where
+module E11_Vigenere where
 
 import Common
 

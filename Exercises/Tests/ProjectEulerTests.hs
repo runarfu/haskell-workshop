@@ -1,7 +1,7 @@
 module Tests.ProjectEulerTests where
 
-import qualified Test.QuickCheck           as QC
-import qualified ProjectEuler              as PE
+import qualified Test.QuickCheck as QC
+import qualified E09_ProjectEuler as PE
 import Test.Hspec
 
 tests = do
