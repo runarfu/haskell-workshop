@@ -1,4 +1,4 @@
-module PartialApplication where
+module E03_PartialApplication where
 
 import Common
 

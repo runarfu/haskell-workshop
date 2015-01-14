@@ -2,8 +2,8 @@
 module Tests.PartialApplicationTests where
 
 import Data.Char (isDigit)
-import qualified Test.QuickCheck    as QC
-import qualified PartialApplication as PA
+import qualified Test.QuickCheck      as QC
+import qualified E03_PartialApplication as PA
 import Test.Hspec
 
 tests = do

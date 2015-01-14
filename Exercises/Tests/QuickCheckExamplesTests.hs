@@ -1,7 +1,7 @@
 module Tests.QuickCheckExamplesTests where
 
-import qualified Test.QuickCheck           as QC
-import qualified QuickCheckExamples        as QCE
+import qualified Test.QuickCheck       as QC
+import qualified E10_QuickCheckExamples as QCE
 import Test.Hspec
 
 tests = do

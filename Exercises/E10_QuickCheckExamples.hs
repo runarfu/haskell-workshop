@@ -1,4 +1,4 @@
-module QuickCheckExamples where
+module E10_QuickCheckExamples where
 
 import Common
 

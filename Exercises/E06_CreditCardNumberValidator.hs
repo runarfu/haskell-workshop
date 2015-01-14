@@ -1,4 +1,4 @@
-module CreditCardNumberValidator where
+module E06_CreditCardNumberValidator where
 
 import Common
 import Data.Char (digitToInt)

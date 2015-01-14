@@ -1,4 +1,4 @@
-module HigherOrderFunctions where
+module E08_HigherOrderFunctions where
 
 import Common
 

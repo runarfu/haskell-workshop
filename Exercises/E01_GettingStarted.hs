@@ -1,4 +1,4 @@
-module GettingStarted where
+module E01_GettingStarted where
 
 -- Let's get one thing out of the way: I'm a comment!
 

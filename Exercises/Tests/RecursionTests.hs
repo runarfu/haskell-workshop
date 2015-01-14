@@ -1,7 +1,7 @@
 module Tests.RecursionTests where
 
-import qualified Test.QuickCheck           as QC
-import qualified Recursion                 as RE
+import qualified Test.QuickCheck as QC
+import qualified E04_Recursion    as RE
 import Test.Hspec
 
 tests = do
