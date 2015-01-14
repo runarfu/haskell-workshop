@@ -16,6 +16,4 @@ executable all
                        QuickCheck,
                        hspec
 
-  hs-source-dirs:      Exercises
-
   default-language:    Haskell2010
