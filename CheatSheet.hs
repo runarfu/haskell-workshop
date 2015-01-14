@@ -31,8 +31,8 @@ inverse = not True
 
 -- If-then-else
 ifThenElse = if 1 == 1
-             then "All is well"
-             else "What's happening??"
+                then "All is well"
+                else "What's happening??"
 
 -- Numbers and arithmetic
 multiply = 3 * 3
