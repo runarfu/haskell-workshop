@@ -1,4 +1,4 @@
-module Functions where
+module E02_Functions where
 
 import Common
 

@@ -1,4 +1,4 @@
-module PatternMatching where
+module E07_PatternMatching where
 
 import Common
 

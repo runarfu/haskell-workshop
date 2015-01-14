@@ -1,7 +1,7 @@
 module Tests.FunctionsTests where
 
 import qualified Test.QuickCheck           as QC
-import qualified Functions                 as FU
+import qualified E02_Functions              as FU
 import Test.Hspec
 
 tests = do

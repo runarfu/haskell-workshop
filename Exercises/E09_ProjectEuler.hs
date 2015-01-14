@@ -1,4 +1,4 @@
-module ProjectEuler where
+module E09_ProjectEuler where
 
 import Common
 

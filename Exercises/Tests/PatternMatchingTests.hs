@@ -1,7 +1,7 @@
 module Tests.PatternMatchingTests where
 
-import qualified Test.QuickCheck           as QC
-import qualified PatternMatching           as PM
+import qualified Test.QuickCheck    as QC
+import qualified E07_PatternMatching as PM
 import Test.Hspec
 
 tests = do
