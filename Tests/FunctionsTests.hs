@@ -14,20 +14,20 @@ tests = do
         it "adds to *arbitrary* numbers" $ do
             QC.property $ \x y -> FU.plus x y == x + y
 
-    describe "Functions.sum3" $ do 
+    describe "Functions.sum3" $ do
         it "adds three *arbitrary* numbers" $ do
             QC.property $ \x y z -> FU.sum3 x y z == x + y + z
 
-    describe "Functions.xor" $ do 
+    describe "Functions.isDollar" $ do
+        it "True only for '$'" $ do
+            QC.property $ \c -> if c == '$' then FU.isDollar c else FU.isDollar c == False
+
+    describe "Functions.xor" $ do
         it "xor works as expected" $ do
             [FU.xor False False,
              FU.xor False True,
              FU.xor True  False,
              FU.xor True  True] == [False, True, True, False]
-
-    describe "Functions.isDollar" $ do 
-        it "True only for '$'" $ do
-            QC.property $ \c -> if c == '$' then FU.isDollar c else FU.isDollar c == False
 
 main = hspec tests
 
